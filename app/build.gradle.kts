@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
 }
+val codeScannerVersion by extra("2.1.0")
+val codeScannerVersion1 by extra(codeScannerVersion)
 
 android {
     namespace = "com.zmaryalaiali.qr"
@@ -38,10 +40,20 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    // QR
-    implementation("com.journeyapps:zxing-android-embedded:4.2.0")
+
+    implementation("com.google.zxing:core:3.4.1")
+
+    implementation("com.journeyapps:zxing-android-embedded:4.3.0")
+//
+//    // QR
+//    implementation("com.journeyapps:zxing-android-embedded:4.2.0")
 
     // scanner
+//    implementation("com.github.budiyev.android:code-scanner:2.1.0")
+
+//    implementation("com.budiyev.android:code-scanner:$codeScannerVersion1")
+
+//    implementation("com.github.AndroidMad:QRGen:${rootProject.extra["qrgenVersion"]}")
 
 
 

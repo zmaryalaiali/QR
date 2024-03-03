@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/qrCode_generate" android:title=" QR Generate" android:icon="@drawable/ic_launcher_foreground"/>
+    <item android:id="@+id/qrCode_scann" android:title="QR Scan" android:icon="@drawable/ic_launcher_foreground"/>
+</menu>
